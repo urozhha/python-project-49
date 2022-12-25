@@ -1,2 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/urozhha/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/urozhha/python-project-49/actions)
+
+<a href="https://codeclimate.com/github/urozhha/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/dcb971ed55c4afb7b2dd/maintainability" /></a>
+
+[step 5 aciinema](https://asciinema.org/a/KzSRo4WLOlIzqm0gabNnjRIE6)
+
