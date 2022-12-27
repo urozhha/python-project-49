@@ -1,6 +1,14 @@
-from prompt import string, integer
+from prompt import string
 from random import randint, choice
 import operator
+import math
+
+
+def get_gsd_data(num1, num2):
+    problem = f'{num1} {num2}'
+    correct = str(math.gcd(num1, num2))
+    out = (problem, correct)
+    return out
 
 
 def get_even_data(num1, num2):

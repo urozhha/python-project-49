@@ -7,3 +7,4 @@
 
 [step 6 asciinema](https://asciinema.org/a/OqoIfH2IqKUH4BxclmaOHoMQ4)
 
+[step 7 asciinema](https://asciinema.org/a/tEx4C2pPcs2OPvsOCZRNfnljB)
