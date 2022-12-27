@@ -6,5 +6,7 @@ def say_hello(player):
     return greeting
 
 
-name = prompt.string('''Welcome to the Brain Games!
+def get_name():
+    name = prompt.string('''Welcome to the Brain Games!
 May I have your name? ''')
+    return name
