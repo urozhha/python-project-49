@@ -20,6 +20,19 @@ def get_progression(num1, num2):
     return out
 
 
+def get_is_prime(num1, num2):
+    correct = ''
+    problem = abs(num1 - num2)
+    for i in range(2, problem):
+        if problem % i == 0:
+            correct = 'no'
+            break
+        else:
+            correct = 'yes'
+    out = (problem, correct)
+    return out
+
+
 def get_gsd_data(num1, num2):
     problem = f'{num1} {num2}'
     correct = str(math.gcd(num1, num2))
