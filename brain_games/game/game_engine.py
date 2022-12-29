@@ -61,12 +61,12 @@ def get_calc_data(num1, num2):
 def game(player, logic):
     wins = 0
     while wins < 3:
-        num1 = randint(-100, 100)
-        num2 = randint(-100, 100)
-        data = logic(num1, num2)
+        first = randint(-100, 100)
+        second = randint(-100, 100)
+        data = logic(first, second)
         print(f'Question: {data[0]}')
-        ans = string('Your answer: ')
-        wins += game_test(ans, data[1], player)
+        answer = string('Your answer: ')
+        wins += game_test(answer, data[1], player)
     print(f'Congratulations, {player}!')
 
 

@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-from brain_games.game_engine.greeting import get_name, say_hello
-from brain_games.game_engine.game import game, get_calc_data
+from brain_games.game.greeting import get_name as get_calc_player
+from brain_games.game.greeting import say_hello as calc_greeting
+from brain_games.game.game_engine import game as calc_game
+from brain_games.game.game_calc import get_calc_data
 
 
 def main():
-    player = get_name()
-    print(say_hello(player))
+    calc_player = get_calc_player()
+    print(calc_greeting(calc_player))
     print('What is the result of the expression?')
-    game(player, get_calc_data)
+    calc_game(calc_player, get_calc_data)
 
 
 if __name__ == '__main__':

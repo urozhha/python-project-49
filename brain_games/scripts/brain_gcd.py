@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-from brain_games.game_engine.greeting import get_name, say_hello
-from brain_games.game_engine.game import game, get_gsd_data
+from brain_games.game.greeting import get_name as get_gcd_player
+from brain_games.game.greeting import say_hello as gcd_greeting
+from brain_games.game.game_engine import game as gcd_game
+from brain_games.game.game_gcd import get_gsd_data
 
 
 def main():
-    player = get_name()
-    print(say_hello(player))
+    gcd_player = get_gcd_player()
+    print(gcd_greeting(gcd_player))
     print('Find the greatest common divisor of given numbers.')
-    game(player, get_gsd_data)
+    gcd_game(gcd_player, get_gsd_data)
 
 
 if __name__ == '__main__':

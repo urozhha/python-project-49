@@ -1,6 +1,6 @@
-from brain_games.game_engine.greeting import get_name
-from brain_games.game_engine.greeting import say_hello
+from brain_games.game.greeting import get_name as get_player
+from brain_games.game.greeting import say_hello as games_greeting
 
 
 def welcome_user():
-    return say_hello(get_name())
+    return games_greeting(get_player())
