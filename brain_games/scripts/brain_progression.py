@@ -2,7 +2,7 @@
 from brain_games.game.greeting import get_name as get_progression_name
 from brain_games.game.greeting import say_hello as progression_greeting
 from brain_games.game.game_engine import game as progression_game
-from brain_games.game.game_engine import get_progression
+from brain_games.game.game_progression import get_progression
 
 
 def main():

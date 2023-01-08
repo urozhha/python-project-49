@@ -2,7 +2,7 @@
 from brain_games.game.greeting import get_name as get_prime_player
 from brain_games.game.greeting import say_hello as prime_greeting
 from brain_games.game.game_engine import game as prime_game
-from brain_games.game.game_engine import get_is_prime
+from brain_games.game.game_prime import get_is_prime
 
 
 def main():
