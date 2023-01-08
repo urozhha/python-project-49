@@ -1,4 +1,4 @@
-def get_is_prime(num1, num2):
+def is_prime(num1, num2):
     correct_prime = ''
     problem_prime = abs(num1 - num2)
     for i in range(2, problem_prime):
@@ -9,3 +9,6 @@ def get_is_prime(num1, num2):
             correct_prime = 'yes'
     prime_out = (problem_prime, correct_prime)
     return prime_out
+
+
+PRIME_QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'

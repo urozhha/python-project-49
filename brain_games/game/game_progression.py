@@ -1,17 +1,20 @@
 from random import randint, choice
 
 
-def get_progression(num1, num2):
+def progression(num1, num2):
     stop = randint(5, 10)
     start = num1 - num2
     diff = randint(-10, 10)
-    progression = [start]
-    while len(progression) < stop:
+    arithmetic_progression = [start]
+    while len(arithmetic_progression) < stop:
         start += diff
-        progression.append(start)
-    gap = choice(progression)
-    progression[progression.index(gap)] = '..'
-    problem = ' '.join(str(x) for x in progression)
+        arithmetic_progression.append(start)
+    gap = choice(arithmetic_progression)
+    arithmetic_progression[arithmetic_progression.index(gap)] = '..'
+    problem = ' '.join(str(x) for x in arithmetic_progression)
     correct = str(gap)
     out = (problem, correct)
     return out
+
+
+PROGRESSION_QUESTION = 'What number is missing in the progression?'

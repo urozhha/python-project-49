@@ -2,7 +2,7 @@ from random import choice
 import operator
 
 
-def get_calc_data(num1, num2):
+def calc_expression(num1, num2):
     operators = [
         ('+', operator.add),
         ('-', operator.sub),
@@ -13,3 +13,6 @@ def get_calc_data(num1, num2):
     correct_calc = str(operation[1](num1, num2))
     calc_out = (problem_calc, correct_calc)
     return calc_out
+
+
+CALC_QUESTION = 'What is the result of the expression?'
