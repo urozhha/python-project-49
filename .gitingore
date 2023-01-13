@@ -1,2 +1,6 @@
 .venv/
 dist/
+brain_games/__pycache__/
+game/__pycache__/
+scripts/__pycache__/
+
