@@ -1,11 +1,13 @@
 from math import gcd
+from random import randint
 
 
-def gcd_game(num1, num2):
-    problem_gcd = f'{num1} {num2}'
-    correct_gcd = str(gcd(num1, num2))
-    gcd_out = (problem_gcd, correct_gcd)
-    return gcd_out
+def gcd_game():
+    first = randint(-100, 100)
+    second = randint(-100, 100)
+    problem_gcd = f'{first} {second}'
+    correct_gcd = str(gcd(first, second))
+    return problem_gcd, correct_gcd
 
 
 GSD_QUESTION = 'Find the greatest common divisor of given numbers.'

@@ -1,8 +1,10 @@
-def is_even(num1, num2):
-    problem_even = num1 * num2
+from random import randint
+
+
+def is_even():
+    problem_even = randint(-100, 100)
     correct_even = 'yes' if problem_even % 2 == 0 else 'no'
-    even_out = (problem_even, correct_even)
-    return even_out
+    return problem_even, correct_even
 
 
 EVEN_QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'

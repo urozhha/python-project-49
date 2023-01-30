@@ -2,3 +2,4 @@ dist/
 brain_games/scripts/__pycache__/
 brain_games/game/__pycache__/
 brain_games/__pycache__/
+.idea/
